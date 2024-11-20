@@ -23,13 +23,16 @@
     }, 1000); 
   }
 
-  // Trigger deep link when the page loads
-  window.onload = function() {
-    openApp(
-      'youtube://', 
-      'intent://#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end', 
-      'https://www.youtube.com');
-  };
 </script>
 </head>
 <body>
+
+<button onclick="openApp(
+  'youtube://', 
+  'intent://#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end', 
+  'https://www.youtube.com')">
+  Open App
+</button>
+
+</body>
+</html>
